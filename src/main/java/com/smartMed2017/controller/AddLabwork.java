@@ -57,7 +57,7 @@ public class AddLabwork {
         labworkService.addLabwork(labwork);
 
 //        return "redirect:/result/" + labwork.getLabworkId();
-        return "redirect:successful.form";
+        return "successful";
     }
 
     @RequestMapping(value = "result/{id}", method = RequestMethod.GET)

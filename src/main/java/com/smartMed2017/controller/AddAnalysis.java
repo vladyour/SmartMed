@@ -38,6 +38,6 @@ public class AddAnalysis {
         neuralNetworkHandler.train(analysis.getAnalysisWeights());
 
         analysisService.addAnalysis(analysis);
-        return "redirect:successful.form";
+        return "successful";
     }
 }
