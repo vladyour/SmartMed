@@ -1,0 +1,33 @@
+.button {
+    width: 300px;
+    height: 80px;
+    padding: 19px;
+    margin-top: 7px;
+    background: #d9eafc;
+    color: #13274C;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    /*border-radius: 7px;*/
+    border-style: none;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.act {
+    background: #1F407E;
+    color: white;
+}
+
+.button:hover {
+    background: #13274C;
+    color: white;
+}
+
+.navbar {
+    margin: 0px auto;
+    width: 300px;
+    float: left;
+}
