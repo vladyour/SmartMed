@@ -1,6 +1,8 @@
 package com.smartMed2017.controller;
 
+import com.smartMed2017.model.Analysis;
 import com.smartMed2017.model.Labwork;
+import com.smartMed2017.model.Patient;
 import com.smartMed2017.neuralNetwork.NeuralNetworkHandler;
 import com.smartMed2017.service.AnalysisService;
 import com.smartMed2017.service.LabworkService;
@@ -9,10 +11,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.sql.Date;
 
 /**
  * Created by vladyour on 05.06.17.
@@ -52,18 +56,50 @@ public class AddLabwork {
 
     @RequestMapping(value = "/addlabwork/add", method = RequestMethod.POST)
     public String addLabwork(@ModelAttribute("labwork")Labwork labwork) {
+        labwork.setAnalysisByAnalysisId(analysisService.getAnalysisById(labwork.getAnalysisId()));
+        labwork.setPatientByPatient(patientService.getPatientById(labwork.getPatientId()));
         NeuralNetworkHandler neuralNetworkHandler = new NeuralNetworkHandler(labwork.getLabworkResult());
-        labwork.setDiagnosis(neuralNetworkHandler.getResult(labwork.getAnalysisByAnalysisId().getAnalysisWeights()));
+        Analysis analysis = analysisService.getAnalysisById(labwork.getAnalysisId());
+        labwork.setDiagnosis(neuralNetworkHandler.getResult(analysis.getAnalysisWeights()));
+        labwork.setLabworkDate(Date.valueOf(LocalDate.now()));
+
         labworkService.addLabwork(labwork);
-
-//        return "redirect:/result/" + labwork.getLabworkId();
-        return "successful";
+        return "result";
     }
 
-    @RequestMapping(value = "result/{id}", method = RequestMethod.GET)
-    public String getResult(@PathVariable(value = "id") int id, Model model) {
+//    @RequestMapping(value = "result", method = RequestMethod.GET)
+//    public ModelAndView getResult(@PathVariable(value = "id")int id) {
+//        ModelAndView modelAndView = new ModelAndView();
+//
+//        //имя представления, куда нужно будет перейти
+//        modelAndView.setViewName("result");
+//
+//        Labwork labwork = labworkService.getLabworkById(id);
+//        //записываем в атрибут userJSP (используется на странице *.jsp объект user
+//        modelAndView.addObject("labwork", labwork);
+//
+//        return modelAndView; //после уйдем на представление, указанное чуть выше, если оно будет найдено.
+//    }
 
-        model.addAttribute("result", this.labworkService.getLabworkById(id));
-        return "addlabwork";
-    }
+//    @RequestMapping(value = "/result/{id}", method = RequestMethod.GET)
+//    public ModelAndView getResult(@PathVariable(value = "id")int id) {
+//        ModelAndView modelAndView = new ModelAndView();
+//
+//        //имя представления, куда нужно будет перейти
+//        modelAndView.setViewName("result");
+//
+//        Labwork labwork = labworkService.getLabworkById(id);
+//        //записываем в атрибут userJSP (используется на странице *.jsp объект user
+//        modelAndView.addObject("labwork", labwork);
+//
+//        return modelAndView; //после уйдем на представление, указанное чуть выше, если оно будет найдено.
+//    }
+
+//    @ModelAttribute
+//    @RequestMapping(value = "/result/{id}", method = RequestMethod.GET)
+//    public Labwork getResult(@PathVariable(value = "id") int id, Model model) {
+//        Labwork labwork = this.labworkService.getLabworkById(id);
+//        model.addAttribute("result", labwork);
+//        return labwork;
+//    }
 }

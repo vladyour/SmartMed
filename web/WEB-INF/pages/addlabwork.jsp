@@ -22,18 +22,26 @@
 <body>
 <section id="bar">
     <header>
-        <img src="../../img/ava.png" class="img">
-        <div class="data">
-            <div class="name">
-                Умномедов Арсений Германович
+        <div class="barinfo">
+            <img src="../../img/ava.png" class="img">
+            <div class="data">
+                <div class="name">
+                    Умномедов Арсений Германович
+                </div>
+                <div class="profession">
+                    лаборант
+                </div>
             </div>
-            <div class="profession">
-                лаборант
-            </div>
+        </div>
+
+        <div class="logo">
+            SmartMed
+        </div>
+        <div class="diploma">
+            Демонстрация выпусной квалификационной работы Выполнил Юревич Владислав
         </div>
     </header>
 </section>
-
 <section id="main">
     <div class="navbar">
         <a class="button act" href="addlabwork.form">Провести анализ</a>
@@ -46,18 +54,18 @@
         <form:form action="${addAction}" modelAttribute="labwork">
             <div class="field">
                 Выберите пациента
-                <form:select path="patientByPatient" cssClass="select">
+                <form:select path="patientId" cssClass="select">
                     <c:forEach items="${patients}" var="patient">
-                        <form:option value="${patient}">${patient.patientSecondName} ${patient.patientFirstName} ${patient.patientPatronymic}</form:option>
+                        <form:option value="${patient.patientId}">${patient.patientSecondName} ${patient.patientFirstName} ${patient.patientPatronymic}</form:option>
                     </c:forEach>
                 </form:select>
             </div>
 
             <div class="field">
                 Выберите анализ
-                <form:select path="analysisByAnalysisId" cssClass="select">
+                <form:select path="analysisId" cssClass="select">
                     <c:forEach items="${analyzes}" var="analysis">
-                        <form:option value="${analysis}">${analysis.analysisTitle}</form:option>
+                        <form:option value="${analysis.analysisId}">${analysis.analysisTitle}</form:option>
                     </c:forEach>
                 </form:select>
             </div>

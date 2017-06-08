@@ -27,7 +27,7 @@ public class AnalysisRepositoryImpl implements AnalysisRepository {
 
     public Analysis getAnalysisById(int id) {
         Session session = this.sessionFactory.getCurrentSession();
-        Analysis analysis = (Analysis) session.load(Analysis.class, new Integer(id));
+        Analysis analysis = (Analysis) session.get(Analysis.class, new Integer(id));
 
         return analysis;
     }

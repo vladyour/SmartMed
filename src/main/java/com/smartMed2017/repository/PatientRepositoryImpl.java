@@ -22,7 +22,7 @@ public class PatientRepositoryImpl implements PatientRepository {
 
     public Patient getPatientById(int id) {
         Session session = this.sessionFactory.getCurrentSession();
-        Patient patient = (Patient) session.load(Patient.class, new Integer(id));
+        Patient patient = (Patient) session.get(Patient.class, new Integer(id));
 
         return patient;
     }

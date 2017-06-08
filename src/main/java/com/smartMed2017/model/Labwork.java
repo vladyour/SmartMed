@@ -10,6 +10,8 @@ import java.sql.Date;
 public class Labwork {
     private int labworkId;
     private String labworkResult;
+    private int patientId;
+    private int analysisId;
     private String description;
     private Date labworkDate;
     private String diagnosis;
@@ -35,6 +37,27 @@ public class Labwork {
 
     public void setLabworkResult(String labworkResult) {
         this.labworkResult = labworkResult;
+    }
+
+
+    @Basic
+    @Column(name = "patient_id", insertable = false, updatable = false)
+    public int getPatientId() {
+        return patientId;
+    }
+
+    public void setPatientId(int patientId) {
+        this.patientId = patientId;
+    }
+
+    @Basic
+    @Column(name = "analysis_id", insertable = false, updatable = false)
+    public int getAnalysisId() {
+        return analysisId;
+    }
+
+    public void setAnalysisId(int analysisId) {
+        this.analysisId = analysisId;
     }
 
     @Basic

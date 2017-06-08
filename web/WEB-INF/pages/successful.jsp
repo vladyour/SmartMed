@@ -22,23 +22,32 @@
 <body>
 <section id="bar">
     <header>
-        <img src="../../img/ava.png" class="img">
-        <div class="data">
-            <div class="name">
-                Умномедов Арсений Германович
+        <div class="barinfo">
+            <img src="../../img/ava.png" class="img">
+            <div class="data">
+                <div class="name">
+                    Умномедов Арсений Германович
+                </div>
+                <div class="profession">
+                    лаборант
+                </div>
             </div>
-            <div class="profession">
-                лаборант
-            </div>
+        </div>
+
+        <div class="logo">
+            SmartMed
+        </div>
+        <div class="diploma">
+            Демонстрация выпусной квалификационной работы Выполнил Юревич Владислав
         </div>
     </header>
 </section>
 
 <section id="main">
     <div class="navbar">
-        <a class="button" href="addlabwork.form">Провести анализ</a>
-        <a class="button" href="archive.form">Архив анализов</a>
-        <a class="button" href="addanalysis.form">Добавить анализ</a>
+        <a class="button" href="/addlabwork.form">Провести анализ</a>
+        <a class="button" href="/archive.form">Архив анализов</a>
+        <a class="button" href="/addanalysis.form">Добавить анализ</a>
     </div>
 
     <div class="info">

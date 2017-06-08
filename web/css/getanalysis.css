@@ -65,4 +65,6 @@ body {
 .info {
     font-size: 11px;
     width: 300px;
+    color: #d60348;
+    font-weight: 400;
 }

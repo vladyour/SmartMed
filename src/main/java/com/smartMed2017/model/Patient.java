@@ -1,6 +1,7 @@
 package com.smartMed2017.model;
 
 import javax.persistence.*;
+import java.util.Set;
 
 /**
  * Created by vladyour on 05.06.17.
