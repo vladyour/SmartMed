@@ -2,7 +2,6 @@ package com.smartMed2017.controller;
 
 import com.smartMed2017.model.Analysis;
 import com.smartMed2017.model.Labwork;
-import com.smartMed2017.model.Patient;
 import com.smartMed2017.neuralNetwork.NeuralNetworkHandler;
 import com.smartMed2017.service.AnalysisService;
 import com.smartMed2017.service.LabworkService;
@@ -12,10 +11,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.sql.Date;
 
 /**

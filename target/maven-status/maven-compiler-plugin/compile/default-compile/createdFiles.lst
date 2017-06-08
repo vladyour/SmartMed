@@ -2,8 +2,10 @@ com/smartMed2017/controller/AddLabwork.class
 com/smartMed2017/model/Patient.class
 com/smartMed2017/model/Labwork.class
 com/smartMed2017/repository/LabworkRepositoryImpl.class
+com/smartMed2017/neuralNetwork/TryNetwork.class
 com/smartMed2017/service/PatientService.class
 com/smartMed2017/service/LabworkService.class
+com/smartMed2017/controller/AllLabwork.class
 com/smartMed2017/service/AnalysisService.class
 com/smartMed2017/neuralNetwork/CSVReader.class
 com/smartMed2017/service/AnalysisServiceImpl.class
