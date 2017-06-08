@@ -112,6 +112,10 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache:2.10.2" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.21" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-config-client:1.0.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-commons:1.0.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:4.0.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-context:1.0.4.RELEASE" />
         </element>
       </element>
     </root>
