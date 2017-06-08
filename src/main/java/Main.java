@@ -9,6 +9,8 @@
 //
 //import java.util.Map;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+
 /**
  * Created by vladyour on 06.06.17.
  */
@@ -47,8 +49,12 @@ public class Main {
 //            session.close();
 //        }
 //    }
+public static void main(String[] args) throws Exception {
+    SpringApplication.run(Main.class, args);
+}
 
-    public static void main(String[] args) throws Exception{
-
+    @RequestMapping("/")
+    String index() {
+        return "index";
     }
 }
