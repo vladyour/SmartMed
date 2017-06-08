@@ -40,7 +40,7 @@
 
   <section class="kira">
     <div class="text">
-
+        github.com/vladyour/SmartMed
     </div>
   </section>
 
