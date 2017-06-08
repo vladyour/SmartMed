@@ -112,16 +112,17 @@ header {
 
 .kira {
 	background: #1F407E;
-	height: 350px;
+	height: 280px;
 	text-align: justify;
 	color: white;
 }
 
 .text {
-	padding-top: 70px;
-	width: 850px;
 	margin: 0px auto;
-	font-size: 25px;
+	padding-top: 110px;
+	width: 850px;
+	font-size: 40px;
+	text-align: center;
 }
 
 #bottom {
