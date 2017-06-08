@@ -1,0 +1,64 @@
+#bar {
+    height: 150px;
+    background: #1F407E;
+    color: white;
+}
+
+header {
+    width: 1200px;
+    margin: 0px auto;
+    padding-top: 5px;
+    height: 150px;
+}
+
+.barinfo {
+    margin-left: 50px;
+    margin-top: 10px;
+    float: left;
+}
+
+.logo {
+    float: right;
+    height: 80px;
+    margin: 0px auto;
+    margin-right: 120px;
+    font-size: 76px;
+}
+
+.diploma {
+    font-size: 14px;
+    height: 40px;
+    width: 350px;
+    float: right;
+    margin-right: 122px;
+    margin-top: 5px;
+}
+
+.img {
+    background: #ffffff;
+    width: 120px;
+    height: 120px;
+    float: left;
+    border-radius: 100px;
+    border: 5px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.data {
+    text-align: right;
+    width: 350px;
+    float: left;
+    padding-top: 10px;
+}
+
+.name {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.profession {
+    color: #d6d6d6;
+    font-style: italic;
+    font-size: 15px;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="d90kv330144fia@ec2-54-83-26-65.compute-1.amazonaws.com" uuid="7d296fd1-031f-4c5d-babc-badbf861d9a5">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>okrnmvzpvozzjh</user-name>
+      <introspection-schemas>d90kv330144fia:public</introspection-schemas>
+    </data-source>
+    <data-source name="dataSource" uuid="beb2071e-1dc9-4f75-b97c-aa594bdb1a7d">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>okrnmvzpvozzjh</user-name>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="67bdc065-ccb8-4239-9fc7-d704141f90f4">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>okrnmvzpvozzjh</user-name>
+      <introspection-schemas>d90kv330144fia:public</introspection-schemas>
+    </data-source>
+  </component>
+</project>

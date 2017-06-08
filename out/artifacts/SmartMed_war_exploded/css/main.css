@@ -1,0 +1,158 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+}
+
+#hat {
+	height: 700px;
+	margin: 0px auto;
+	background: url(../img/bg.jpg) no-repeat center top / cover;
+	color: #1F407E;
+}
+
+.container {
+	width: 900px;
+	margin: 0px auto;
+}
+
+header {
+	padding-top: 30px;
+	font-size: 14px;
+}
+
+.name {
+	float: left;
+	text-transform: uppercase;
+}
+
+.demonstration {
+	float: right;
+	text-transform: uppercase;
+}
+
+.right {
+	width: 500px;
+	float: right;
+	text-align: center;
+}
+
+.auth {
+	font-size: 56px;
+	text-transform: uppercase;
+	padding-top: 100px;
+	padding-bottom: 10px;
+}
+
+.info {
+	margin: 0px auto;
+	margin-top: 150px;
+	margin-bottom: 40px;
+	text-align: justify;
+	font-size: 17px;
+}
+
+.cell {
+	border-radius: 7px;
+	border: 0px;
+	display: block;
+	/*box-shadow: -2px 2px 2px rgba(0,0,0,0.3);*/
+	background: #ffffff;
+	height: 50px;
+	width: 100%;
+	padding-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+.button {
+	background: #1F407E;
+	margin: 0px auto;
+	color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 7px;
+	border-style: none;
+	padding: 19px 30px;
+	text-decoration: none;
+	display: block;
+	width: 250px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.button:hover{
+	background: #13274C;
+}
+
+#invite {
+	background: #1F407E;
+	padding-top: 70px;
+}
+
+.form {
+	width: 250px;
+	margin: 0px auto;
+}
+
+
+.email {
+	margin: 0px auto;
+	width: 500px;
+	height: 340px;
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.kira {
+	background: #1F407E;
+	height: 350px;
+	text-align: justify;
+	color: white;
+}
+
+.text {
+	padding-top: 70px;
+	width: 850px;
+	margin: 0px auto;
+	font-size: 25px;
+}
+
+#bottom {
+	background: #13274C;
+	height: 100px;
+	color: white;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+.bottom {
+	width: 900px;
+	margin: 0px auto;
+}
+
+.uni {
+	float: left;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	padding-left: 40px;
+	background: url(../img/uni.png) no-repeat left center;
+	background-size: 30px;
+}
+
+.fac {
+	float: right;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	padding-left: 40px;
+	background: url(../img/fac.png) no-repeat left center;
+	background-size: 30px;
+}
